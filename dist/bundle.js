@@ -5267,14 +5267,15 @@
       }
     };
 
-    const _withId = /*#__PURE__*/withScopeId("data-v-3fc35882");
+    const _withId = /*#__PURE__*/withScopeId("data-v-7cd77e70");
 
     const render = /*#__PURE__*/_withId((_ctx, _cache, $props, $setup, $data, $options) => {
-      return (openBlock(), createBlock("h1", null, "Hello " + toDisplayString($data.name), 1 /* TEXT */))
+      return (openBlock(), createBlock("h1", null, "Welcome to Vue, " + toDisplayString($data.name), 1 /* TEXT */))
     });
 
     script.render = render;
-    script.__scopeId = "data-v-3fc35882";
+    script.__scopeId = "data-v-7cd77e70";
+    script.__file = "src/MyComponent.vue";
 
     createApp(script).mount("#app");
 
