@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "servor dist",
     "build": "rollup -c --compact --environment BUILD:production",
     "dev": "concurrently \"rollup -c --environment BUILD:development --watch \" \"servor dist --reload\""
   },
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.2.0",
     "rollup-plugin-alias": "^2.2.0",
-    "rollup-plugin-commonjs": "^10.1.0"
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }

@@ -4,6 +4,9 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import css from "rollup-plugin-css-only";
 import alias from "rollup-plugin-alias";
 import replace from "rollup-plugin-replace";
+import { terser } from "rollup-plugin-terser";
+
+console.log();
 
 export default {
   input: "src/app.js",
@@ -32,5 +35,6 @@ export default {
       browser: true,
     }),
     css({ output: "bundle.css" }),
+    process.argv.includes("BUILD:production") ? terser() : null,
   ],
 };
